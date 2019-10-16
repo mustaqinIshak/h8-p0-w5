@@ -1,5 +1,8 @@
 function cariPelaku(str) {
     // you can only write your code here!
+    if(str.length === 0){
+      return str
+  }
     return str.match(/abc/g).length
   }
   

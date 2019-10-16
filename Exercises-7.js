@@ -1,6 +1,9 @@
 function hapusSimbol(str) {
     // you can only write your code here!
-    //  return RegExp(/[$-/:-?{-~!"^_`\[\]]/) 
+    if(str.length === 0){
+        return str
+    }
+
     var hilangSpasi = str.replace(/[\s ]/g, "")
     return hilangSpasi.replace(/[^\w ]/g, "");
 }
